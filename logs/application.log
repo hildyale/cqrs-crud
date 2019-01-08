@@ -1,0 +1,10 @@
+2019-01-08 13:17:06,779 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-8 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-08 13:17:06,823 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2019-01-08 13:17:08,121 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-8 - datasource [default] bound to JNDI as DefaultDS
+2019-01-08 13:17:13,247 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-08 13:17:13,394 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev)
