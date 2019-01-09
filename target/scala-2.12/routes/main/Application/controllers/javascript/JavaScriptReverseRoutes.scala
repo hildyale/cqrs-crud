@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Tue Jan 08 09:39:20 COT 2019
+// @DATE:Wed Jan 09 10:38:14 COT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -10,6 +10,36 @@ import _root_.play.libs.F
 
 // @LINE:6
 package application.controllers.javascript {
+
+  // @LINE:7
+  class ReverseVehiculosQueryController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def getVehiculos: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "application.controllers.VehiculosQueryController.getVehiculos",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def getVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "application.controllers.VehiculosQueryController.getVehiculo",
+      """
+        function(placa0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("placa", placa0))})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:6
   class ReverseHomeController(_prefix: => String) {
@@ -31,28 +61,8 @@ package application.controllers.javascript {
   
   }
 
-  // @LINE:7
-  class ReverseVehiculosViewController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:7
-    def getVehiculos: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "application.controllers.VehiculosViewController.getVehiculos",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:8
-  class ReverseVehiculosController(_prefix: => String) {
+  // @LINE:9
+  class ReverseVehiculosCommandController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
@@ -60,18 +70,8 @@ package application.controllers.javascript {
 
   
     // @LINE:10
-    def deleteVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "application.controllers.VehiculosController.deleteVehiculo",
-      """
-        function() {
-          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos"})
-        }
-      """
-    )
-  
-    // @LINE:9
     def updateVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "application.controllers.VehiculosController.updateVehiculo",
+      "application.controllers.VehiculosCommandController.updateVehiculo",
       """
         function() {
           return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos"})
@@ -79,9 +79,19 @@ package application.controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:11
+    def deleteVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "application.controllers.VehiculosCommandController.deleteVehiculo",
+      """
+        function(placa0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("placa", placa0))})
+        }
+      """
+    )
+  
+    // @LINE:9
     def addVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "application.controllers.VehiculosController.addVehiculo",
+      "application.controllers.VehiculosCommandController.addVehiculo",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "vehiculos"})

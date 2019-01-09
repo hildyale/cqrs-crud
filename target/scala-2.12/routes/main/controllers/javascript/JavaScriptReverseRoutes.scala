@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Tue Jan 08 09:39:20 COT 2019
+// @DATE:Wed Jan 09 10:38:14 COT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -8,10 +8,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:13
+// @LINE:14
 package controllers.javascript {
 
-  // @LINE:13
+  // @LINE:14
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

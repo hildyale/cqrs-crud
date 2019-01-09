@@ -33,6 +33,9 @@ repositories {
         name "lightbend-maven-releases"
         url "https://repo.lightbend.com/lightbend/maven-release"
     }
+    maven {
+        url  "https://dl.bintray.com/eventuateio-oss/eventuate-maven-release"
+    }
     ivy {
         name "lightbend-ivy-release"
         url "https://repo.lightbend.com/lightbend/ivy-releases"

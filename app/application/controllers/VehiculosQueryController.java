@@ -11,13 +11,13 @@ import java.util.stream.Collectors;
 
 import static play.libs.Json.toJson;
 
-public class VehiculosViewController extends Controller {
+public class VehiculosQueryController extends Controller {
 
     private final VehiculoRepository vehiculoRepository;
     private final HttpExecutionContext ec;
 
     @Inject
-    public VehiculosViewController(VehiculoRepository vehiculoRepository, HttpExecutionContext ec) {
+    public VehiculosQueryController(VehiculoRepository vehiculoRepository, HttpExecutionContext ec) {
         this.vehiculoRepository = vehiculoRepository;
         this.ec = ec;
     }
@@ -27,6 +27,13 @@ public class VehiculosViewController extends Controller {
                         ok(toJson(Stream.collect(Collectors.toList())))
                         , ec.current()
                     );
+    }
+
+    public CompletionStage<Result> getVehiculo(String placa) {
+        return vehiculoRepository.select(placa).thenApplyAsync(vehiculo ->
+                        ok(toJson(vehiculo))
+                , ec.current()
+        ).exceptionally(error -> internalServerError(error.getMessage()));
     }
 
 }

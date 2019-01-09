@@ -4,7 +4,7 @@
 		module="prueba-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190108083735"
+		publication="20190109093731"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

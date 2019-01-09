@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "vehiculo")
-public class VehiculoEntity {
+public class Vehiculo {
 
     @Id
     private String placa;
@@ -39,7 +39,7 @@ public class VehiculoEntity {
     //@Temporal(TemporalType.TIMESTAMP)
     private Date fechaIngreso;
 
-    public VehiculoEntity(){
+    public Vehiculo(){
         this.fechaIngreso = new Date();
     }
 
@@ -110,7 +110,7 @@ public class VehiculoEntity {
 
     @Override
     public String toString() {
-        return "VehiculoEntity{" +
+        return "Vehiculo{" +
                 "placa='" + placa + '\'' +
                 ", tipo='" + tipo + '\'' +
                 ", cilindraje=" + cilindraje +

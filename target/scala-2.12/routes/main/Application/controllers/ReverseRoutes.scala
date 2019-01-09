@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Tue Jan 08 09:39:20 COT 2019
+// @DATE:Wed Jan 09 10:38:14 COT 2019
 
 import play.api.mvc.Call
 
@@ -10,6 +10,27 @@ import _root_.play.libs.F
 
 // @LINE:6
 package application.controllers {
+
+  // @LINE:7
+  class ReverseVehiculosQueryController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def getVehiculos(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "vehiculos")
+    }
+  
+    // @LINE:8
+    def getVehiculo(placa:String): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "vehiculos/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("placa", placa)))
+    }
+  
+  }
 
   // @LINE:6
   class ReverseHomeController(_prefix: => String) {
@@ -26,41 +47,26 @@ package application.controllers {
   
   }
 
-  // @LINE:7
-  class ReverseVehiculosViewController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:7
-    def getVehiculos(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "vehiculos")
-    }
-  
-  }
-
-  // @LINE:8
-  class ReverseVehiculosController(_prefix: => String) {
+  // @LINE:9
+  class ReverseVehiculosCommandController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
     // @LINE:10
-    def deleteVehiculo(): Call = {
-      
-      Call("DELETE", _prefix + { _defaultPrefix } + "vehiculos")
-    }
-  
-    // @LINE:9
     def updateVehiculo(): Call = {
       
       Call("PUT", _prefix + { _defaultPrefix } + "vehiculos")
     }
   
-    // @LINE:8
+    // @LINE:11
+    def deleteVehiculo(placa:String): Call = {
+      
+      Call("DELETE", _prefix + { _defaultPrefix } + "vehiculos/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("placa", placa)))
+    }
+  
+    // @LINE:9
     def addVehiculo(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "vehiculos")

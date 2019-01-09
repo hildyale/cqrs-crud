@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Tue Jan 08 09:39:20 COT 2019
+// @DATE:Wed Jan 09 10:38:14 COT 2019
 
 package router
 
@@ -17,11 +17,11 @@ class Routes(
   // @LINE:6
   HomeController_0: application.controllers.HomeController,
   // @LINE:7
-  VehiculosViewController_2: application.controllers.VehiculosViewController,
-  // @LINE:8
-  VehiculosController_3: application.controllers.VehiculosController,
-  // @LINE:13
-  Assets_1: controllers.Assets,
+  VehiculosQueryController_1: application.controllers.VehiculosQueryController,
+  // @LINE:9
+  VehiculosCommandController_3: application.controllers.VehiculosCommandController,
+  // @LINE:14
+  Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -30,16 +30,16 @@ class Routes(
     // @LINE:6
     HomeController_0: application.controllers.HomeController,
     // @LINE:7
-    VehiculosViewController_2: application.controllers.VehiculosViewController,
-    // @LINE:8
-    VehiculosController_3: application.controllers.VehiculosController,
-    // @LINE:13
-    Assets_1: controllers.Assets
-  ) = this(errorHandler, HomeController_0, VehiculosViewController_2, VehiculosController_3, Assets_1, "/")
+    VehiculosQueryController_1: application.controllers.VehiculosQueryController,
+    // @LINE:9
+    VehiculosCommandController_3: application.controllers.VehiculosCommandController,
+    // @LINE:14
+    Assets_2: controllers.Assets
+  ) = this(errorHandler, HomeController_0, VehiculosQueryController_1, VehiculosCommandController_3, Assets_2, "/")
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_0, VehiculosViewController_2, VehiculosController_3, Assets_1, prefix)
+    new Routes(errorHandler, HomeController_0, VehiculosQueryController_1, VehiculosCommandController_3, Assets_2, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -48,10 +48,11 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """application.controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosViewController.getVehiculos"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosController.addVehiculo"""),
-    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosController.updateVehiculo"""),
-    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosController.deleteVehiculo"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosQueryController.getVehiculos"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos/""" + "$" + """placa<[^/]+>""", """application.controllers.VehiculosQueryController.getVehiculo(placa:String)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosCommandController.addVehiculo"""),
+    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos""", """application.controllers.VehiculosCommandController.updateVehiculo"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """vehiculos/""" + "$" + """placa<[^/]+>""", """application.controllers.VehiculosCommandController.deleteVehiculo(placa:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -79,14 +80,14 @@ class Routes(
   )
 
   // @LINE:7
-  private[this] lazy val application_controllers_VehiculosViewController_getVehiculos1_route = Route("GET",
+  private[this] lazy val application_controllers_VehiculosQueryController_getVehiculos1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos")))
   )
-  private[this] lazy val application_controllers_VehiculosViewController_getVehiculos1_invoker = createInvoker(
-    VehiculosViewController_2.getVehiculos,
+  private[this] lazy val application_controllers_VehiculosQueryController_getVehiculos1_invoker = createInvoker(
+    VehiculosQueryController_1.getVehiculos,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "application.controllers.VehiculosViewController",
+      "application.controllers.VehiculosQueryController",
       "getVehiculos",
       Nil,
       "GET",
@@ -97,14 +98,32 @@ class Routes(
   )
 
   // @LINE:8
-  private[this] lazy val application_controllers_VehiculosController_addVehiculo2_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos")))
+  private[this] lazy val application_controllers_VehiculosQueryController_getVehiculo2_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos/"), DynamicPart("placa", """[^/]+""",true)))
   )
-  private[this] lazy val application_controllers_VehiculosController_addVehiculo2_invoker = createInvoker(
-    VehiculosController_3.addVehiculo,
+  private[this] lazy val application_controllers_VehiculosQueryController_getVehiculo2_invoker = createInvoker(
+    VehiculosQueryController_1.getVehiculo(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "application.controllers.VehiculosController",
+      "application.controllers.VehiculosQueryController",
+      "getVehiculo",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """vehiculos/""" + "$" + """placa<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:9
+  private[this] lazy val application_controllers_VehiculosCommandController_addVehiculo3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos")))
+  )
+  private[this] lazy val application_controllers_VehiculosCommandController_addVehiculo3_invoker = createInvoker(
+    VehiculosCommandController_3.addVehiculo,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "application.controllers.VehiculosCommandController",
       "addVehiculo",
       Nil,
       "POST",
@@ -114,15 +133,15 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val application_controllers_VehiculosController_updateVehiculo3_route = Route("PUT",
+  // @LINE:10
+  private[this] lazy val application_controllers_VehiculosCommandController_updateVehiculo4_route = Route("PUT",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos")))
   )
-  private[this] lazy val application_controllers_VehiculosController_updateVehiculo3_invoker = createInvoker(
-    VehiculosController_3.updateVehiculo,
+  private[this] lazy val application_controllers_VehiculosCommandController_updateVehiculo4_invoker = createInvoker(
+    VehiculosCommandController_3.updateVehiculo,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "application.controllers.VehiculosController",
+      "application.controllers.VehiculosCommandController",
       "updateVehiculo",
       Nil,
       "PUT",
@@ -132,30 +151,30 @@ class Routes(
     )
   )
 
-  // @LINE:10
-  private[this] lazy val application_controllers_VehiculosController_deleteVehiculo4_route = Route("DELETE",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos")))
+  // @LINE:11
+  private[this] lazy val application_controllers_VehiculosCommandController_deleteVehiculo5_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("vehiculos/"), DynamicPart("placa", """[^/]+""",true)))
   )
-  private[this] lazy val application_controllers_VehiculosController_deleteVehiculo4_invoker = createInvoker(
-    VehiculosController_3.deleteVehiculo,
+  private[this] lazy val application_controllers_VehiculosCommandController_deleteVehiculo5_invoker = createInvoker(
+    VehiculosCommandController_3.deleteVehiculo(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "application.controllers.VehiculosController",
+      "application.controllers.VehiculosCommandController",
       "deleteVehiculo",
-      Nil,
+      Seq(classOf[String]),
       "DELETE",
-      this.prefix + """vehiculos""",
+      this.prefix + """vehiculos/""" + "$" + """placa<[^/]+>""",
       """""",
       Seq()
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
-    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
+    Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -178,33 +197,39 @@ class Routes(
       }
   
     // @LINE:7
-    case application_controllers_VehiculosViewController_getVehiculos1_route(params@_) =>
+    case application_controllers_VehiculosQueryController_getVehiculos1_route(params@_) =>
       call { 
-        application_controllers_VehiculosViewController_getVehiculos1_invoker.call(VehiculosViewController_2.getVehiculos)
+        application_controllers_VehiculosQueryController_getVehiculos1_invoker.call(VehiculosQueryController_1.getVehiculos)
       }
   
     // @LINE:8
-    case application_controllers_VehiculosController_addVehiculo2_route(params@_) =>
-      call { 
-        application_controllers_VehiculosController_addVehiculo2_invoker.call(VehiculosController_3.addVehiculo)
+    case application_controllers_VehiculosQueryController_getVehiculo2_route(params@_) =>
+      call(params.fromPath[String]("placa", None)) { (placa) =>
+        application_controllers_VehiculosQueryController_getVehiculo2_invoker.call(VehiculosQueryController_1.getVehiculo(placa))
       }
   
     // @LINE:9
-    case application_controllers_VehiculosController_updateVehiculo3_route(params@_) =>
+    case application_controllers_VehiculosCommandController_addVehiculo3_route(params@_) =>
       call { 
-        application_controllers_VehiculosController_updateVehiculo3_invoker.call(VehiculosController_3.updateVehiculo)
+        application_controllers_VehiculosCommandController_addVehiculo3_invoker.call(VehiculosCommandController_3.addVehiculo)
       }
   
     // @LINE:10
-    case application_controllers_VehiculosController_deleteVehiculo4_route(params@_) =>
+    case application_controllers_VehiculosCommandController_updateVehiculo4_route(params@_) =>
       call { 
-        application_controllers_VehiculosController_deleteVehiculo4_invoker.call(VehiculosController_3.deleteVehiculo)
+        application_controllers_VehiculosCommandController_updateVehiculo4_invoker.call(VehiculosCommandController_3.updateVehiculo)
       }
   
-    // @LINE:13
-    case controllers_Assets_versioned5_route(params@_) =>
+    // @LINE:11
+    case application_controllers_VehiculosCommandController_deleteVehiculo5_route(params@_) =>
+      call(params.fromPath[String]("placa", None)) { (placa) =>
+        application_controllers_VehiculosCommandController_deleteVehiculo5_invoker.call(VehiculosCommandController_3.deleteVehiculo(placa))
+      }
+  
+    // @LINE:14
+    case controllers_Assets_versioned6_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned5_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned6_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }
