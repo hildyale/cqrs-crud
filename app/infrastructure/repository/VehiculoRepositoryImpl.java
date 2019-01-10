@@ -29,7 +29,7 @@ public class VehiculoRepositoryImpl implements VehiculoRepository {
     }
 
     @Override
-    public CompletionStage<String> delete(String placa) {
+    public CompletionStage<Vehiculo> delete(String placa) {
         return supplyAsync(() -> wrap(em -> delete(em, placa)), executor);
     }
 
@@ -56,15 +56,20 @@ public class VehiculoRepositoryImpl implements VehiculoRepository {
         return vehiculo;
     }
 
-    private String delete(EntityManager em, String placa) {
-        /*if(em.contains(vehiculo)){
-            em.remove(vehiculo);
-        }*/
+    /*private String delete(EntityManager em, String placa) {
         Query query = em.createQuery("DELETE FROM Vehiculo AS p WHERE p.placa=:placa")
                 .setParameter("placa", placa);
         query.executeUpdate();
         return placa;
+    }*/
+
+    private Vehiculo delete(EntityManager em, String placa) {
+        Vehiculo vehiculo = em.createQuery("SELECT p FROM Vehiculo AS p WHERE p.placa=:placa",Vehiculo.class)
+                .setParameter("placa", placa).getSingleResult();
+        em.remove(vehiculo);
+        return vehiculo;
     }
+
 
     private Vehiculo select(EntityManager em, String placa) {
         return em.createQuery("SELECT p FROM Vehiculo AS p WHERE p.placa=:placa",Vehiculo.class)
@@ -72,7 +77,9 @@ public class VehiculoRepositoryImpl implements VehiculoRepository {
     }
 
     private Vehiculo update(EntityManager em, Vehiculo vehiculo){
-        if(em.contains(vehiculo)){
+        Vehiculo vehiculoObtenido = em.createQuery("SELECT p FROM Vehiculo AS p WHERE p.placa=:placa",Vehiculo.class)
+                .setParameter("placa", vehiculo.getPlaca()).getSingleResult();
+        if(vehiculoObtenido != null){
             em.merge(vehiculo);
         }
         return vehiculo;

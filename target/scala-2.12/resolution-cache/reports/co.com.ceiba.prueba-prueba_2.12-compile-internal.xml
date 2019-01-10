@@ -7,8 +7,22 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, docs"
-		date="20190109093742"/>
+		date="20190109161509"/>
 	<dependencies>
+		<module organisation="com.rabbitmq" name="amqp-client">
+			<revision name="5.5.2" status="release" pubdate="20190103043447" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.rabbitmq.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
+				<license name="ASL 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<license name="GPL v2" url="http://www.gnu.org/licenses/gpl-2.0.txt"/>
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.txt"/>
+				<metadata-artifact status="no" details="" size="8766" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.rabbitmq\amqp-client\ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.5.2/amqp-client-5.5.2.pom"/>
+				<caller organisation="co.com.ceiba.prueba" name="prueba_2.12" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="amqp-client" type="jar" ext="jar" status="no" details="" size="596539" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.rabbitmq\amqp-client\jars\amqp-client-5.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.5.2/amqp-client-5.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.hibernate" name="hibernate-core">
 			<revision name="5.2.17.Final" status="release" pubdate="20180426051721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="73">
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
@@ -1069,6 +1083,7 @@
 				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.6.20"/>
 				<caller organisation="com.jolbox" name="bonecp" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="0.8.0.RELEASE"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.12" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.5.17"/>
+				<caller organisation="com.rabbitmq" name="amqp-client" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="5.5.2"/>
 				<artifacts>
 					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.25.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"/>

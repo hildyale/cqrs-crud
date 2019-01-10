@@ -11,6 +11,8 @@ libraryDependencies += guice
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.41"
 libraryDependencies += javaJpa
 libraryDependencies += "org.hibernate" % "hibernate-core" % "5.2.17.Final"
+libraryDependencies += "com.rabbitmq" % "amqp-client" % "5.5.2"
+
 
 
 

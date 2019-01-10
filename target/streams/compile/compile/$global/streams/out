@@ -1,2 +1,22 @@
-[0m[[0m[0minfo[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\infrastructure\repository\DatabaseExecutionContext.java: C:\Users\Ceiba\Downloads\prueba\app\infrastructure\repository\DatabaseExecutionContext.java uses or overrides a deprecated API.[0m
-[0m[[0m[0minfo[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\infrastructure\repository\DatabaseExecutionContext.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:3:1: package com.rabbitmq.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.rabbitmq.client.Connection;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:4:1: package com.rabbitmq.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.rabbitmq.client.Channel;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:5:1: package com.rabbitmq.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.rabbitmq.client.ConnectionFactory;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:16:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ConnectionFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class domain.events.RabbitMQ[0m
+[0m[[0m[31merror[0m] [0m[0m    private final ConnectionFactory factory;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ConnectionFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class domain.events.RabbitMQ[0m
+[0m[[0m[31merror[0m] [0m[0m        factory = new ConnectionFactory();[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Connection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class domain.events.RabbitMQ[0m
+[0m[[0m[31merror[0m] [0m[0m        try (Connection connection = factory.newConnection();[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Ceiba\Downloads\prueba\app\domain\events\RabbitMQ.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Channel[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class domain.events.RabbitMQ[0m
+[0m[[0m[31merror[0m] [0m[0m             Channel channel = connection.createChannel()) {[0m

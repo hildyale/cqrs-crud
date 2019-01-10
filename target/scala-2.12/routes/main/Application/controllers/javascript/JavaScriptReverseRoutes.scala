@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Wed Jan 09 10:38:14 COT 2019
+// @DATE:Wed Jan 09 14:14:24 COT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -18,6 +18,16 @@ package application.controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:9
+    def eventos: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "application.controllers.VehiculosQueryController.eventos",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "eventos"})
+        }
+      """
+    )
   
     // @LINE:7
     def getVehiculos: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -61,7 +71,7 @@ package application.controllers.javascript {
   
   }
 
-  // @LINE:9
+  // @LINE:10
   class ReverseVehiculosCommandController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -69,7 +79,7 @@ package application.controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:11
     def updateVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "application.controllers.VehiculosCommandController.updateVehiculo",
       """
@@ -79,7 +89,7 @@ package application.controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:12
     def deleteVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "application.controllers.VehiculosCommandController.deleteVehiculo",
       """
@@ -89,7 +99,7 @@ package application.controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:10
     def addVehiculo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "application.controllers.VehiculosCommandController.addVehiculo",
       """

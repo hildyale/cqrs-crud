@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Ceiba/Downloads/prueba/conf/routes
-// @DATE:Wed Jan 09 10:38:14 COT 2019
+// @DATE:Wed Jan 09 14:14:24 COT 2019
 
 
 package router {

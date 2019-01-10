@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public interface VehiculoRepository {
     CompletionStage<Vehiculo> add(Vehiculo vehiculo);
     CompletionStage<Vehiculo> update(Vehiculo vehiculo);
-    CompletionStage<String> delete(String placa);
+    CompletionStage<Vehiculo> delete(String placa);
     CompletionStage<Stream<Vehiculo>> list();
     CompletionStage<Vehiculo> select(String placa);
 }

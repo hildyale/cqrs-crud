@@ -6,9 +6,10 @@
 GET     /                           application.controllers.HomeController.index
 GET     /vehiculos                  application.controllers.VehiculosQueryController.getVehiculos
 GET     /vehiculos/:placa           application.controllers.VehiculosQueryController.getVehiculo(placa: String)
-POST    /vehiculos                 application.controllers.VehiculosCommandController.addVehiculo
+GET     /eventos                    application.controllers.VehiculosQueryController.eventos
+POST    /vehiculos                  application.controllers.VehiculosCommandController.addVehiculo
 PUT     /vehiculos                  application.controllers.VehiculosCommandController.updateVehiculo
-DELETE  /vehiculos/:placa        application.controllers.VehiculosCommandController.deleteVehiculo(placa: String)
+DELETE  /vehiculos/:placa           application.controllers.VehiculosCommandController.deleteVehiculo(placa: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

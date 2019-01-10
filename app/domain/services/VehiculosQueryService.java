@@ -1,4 +1,4 @@
-package domain;
+package domain.services;
 
 import domain.model.Vehiculo;
 import infrastructure.repository.VehiculoRepository;
