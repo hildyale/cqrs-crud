@@ -2,7 +2,6 @@ package application.controllers;
 
 import domain.events.DomainEventPublisher;
 import domain.services.VehiculosQueryService;
-import infrastructure.repository.VehiculoRepository;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Result;

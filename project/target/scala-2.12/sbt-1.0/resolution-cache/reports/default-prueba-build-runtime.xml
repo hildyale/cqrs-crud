@@ -9,10 +9,10 @@
 		extra-sbtVersion="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190109161501"/>
+		date="20190110091843"/>
 	<dependencies>
 		<module organisation="org.foundweekends.giter8" name="sbt-giter8-scaffold">
-			<revision name="0.11.0" status="release" pubdate="20180713151356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="125">
+			<revision name="0.11.0" status="release" pubdate="20180713151356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="126">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="1755" time="0" location="C:\Users\Ceiba\.ivy2\cache\scala_2.12\sbt_1.0\org.foundweekends.giter8\sbt-giter8-scaffold\ivy-0.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends.giter8/sbt-giter8-scaffold/scala_2.12/sbt_1.0/0.11.0/ivys/ivy.xml"/>
 				<caller organisation="default" name="prueba-build" conf="compile, runtime" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
@@ -24,7 +24,7 @@
 			</revision>
 		</module>
 		<module organisation="org.foundweekends.giter8" name="giter8-lib_2.12">
-			<revision name="0.11.0" status="release" pubdate="20180713141048" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="126">
+			<revision name="0.11.0" status="release" pubdate="20180713141048" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="127">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5023" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.foundweekends.giter8\giter8-lib_2.12\ivy-0.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-lib_2.12/0.11.0/giter8-lib_2.12-0.11.0.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="sbt-giter8-scaffold" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.11.0"/>
@@ -36,7 +36,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
-			<revision name="1.1.0" status="release" pubdate="20180220125820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*), default, default(compile)" position="164">
+			<revision name="1.1.0" status="release" pubdate="20180220125820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*), default, default(compile)" position="165">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3305" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-lib_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.11.0"/>
@@ -61,7 +61,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-archiver">
-			<revision name="2.7.1" status="release" pubdate="20141017092844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="160">
+			<revision name="2.7.1" status="release" pubdate="20141017092844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="161">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="8331" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.codehaus.plexus\plexus-archiver\ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/2.7.1/plexus-archiver-2.7.1.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-lib_2.12" conf="default, compile, runtime, master" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.11.0"/>
@@ -73,7 +73,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-io">
-			<revision name="2.2" status="release" pubdate="20141012141035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="163">
+			<revision name="2.2" status="release" pubdate="20141012141035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="164">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7827" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.codehaus.plexus\plexus-io\ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/2.2/plexus-io-2.2.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.7.1"/>
@@ -85,7 +85,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-utils">
-			<revision name="3.0.18" status="release" pubdate="20140927121417" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="162">
+			<revision name="3.0.18" status="release" pubdate="20140927121417" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="163">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7250" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.codehaus.plexus\plexus-utils\ivy-3.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="1.0-alpha-9-stable-1"/>
@@ -155,7 +155,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-io" name="commons-io">
-			<revision name="2.6" status="release" pubdate="20171015050052" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="159">
+			<revision name="2.6" status="release" pubdate="20171015050052" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="160">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="12952" time="0" location="C:\Users\Ceiba\.ivy2\cache\commons-io\commons-io\ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom"/>
 				<caller organisation="com.spotify" name="docker-client" conf="default, compile, runtime, master" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="8.9.0"/>
@@ -186,7 +186,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194444" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="136">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194444" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="10924" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.pgm\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/4.9.0.201710071750-r/org.eclipse.jgit.pgm-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-lib_2.12" conf="default, compile, runtime, master" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="0.11.0"/>
@@ -198,7 +198,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.lfs.server">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="157">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="158">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="9008" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.lfs.server\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.lfs.server/4.9.0.201710071750-r/org.eclipse.jgit.lfs.server-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -210,7 +210,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.2.4" status="release" pubdate="20130513165652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="158">
+			<revision name="2.2.4" status="release" pubdate="20130513165652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="159">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3417" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.google.code.gson\gson\ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.lfs.server" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="4.9.0.201710071750-r"/>
@@ -222,7 +222,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.lfs">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="156">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="157">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="8345" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.lfs\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.lfs/4.9.0.201710071750-r/org.eclipse.jgit.lfs-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -235,7 +235,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-servlet">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="149">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="150">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="8902" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-servlet\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.4.5.v20170502/jetty-servlet-9.4.5.v20170502.pom"/>
@@ -248,7 +248,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-security">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="150">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="151">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="8533" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-security\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.4.5.v20170502/jetty-security-9.4.5.v20170502.pom"/>
@@ -261,7 +261,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-server">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="151">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="152">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="9322" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-server\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.4.5.v20170502/jetty-server-9.4.5.v20170502.pom"/>
@@ -274,7 +274,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-http">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152502" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="153">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152502" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="154">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="8674" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-http\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.5.v20170502/jetty-http-9.4.5.v20170502.pom"/>
@@ -287,7 +287,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-io">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152429" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="155">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152429" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="156">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="8420" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-io\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.5.v20170502/jetty-io-9.4.5.v20170502.pom"/>
@@ -301,7 +301,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-util">
-			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="154">
+			<revision name="9.4.5.v20170502" status="release" pubdate="20170502152336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="155">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="8868" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jetty\jetty-util\ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.5.v20170502/jetty-util-9.4.5.v20170502.pom"/>
@@ -315,7 +315,7 @@
 			</revision>
 		</module>
 		<module organisation="log4j" name="log4j">
-			<revision name="1.2.15" status="release" pubdate="20070830124116" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org:80/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="146">
+			<revision name="1.2.15" status="release" pubdate="20070830124116" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org:80/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="147">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3727" time="0" location="C:\Users\Ceiba\.ivy2\cache\log4j\log4j\ivy-1.2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="4.9.0.201710071750-r"/>
@@ -335,7 +335,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-log4j12">
-			<revision name="1.7.2" status="release" pubdate="20121011135615" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="145">
+			<revision name="1.7.2" status="release" pubdate="20121011135615" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="146">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="4606" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.slf4j\slf4j-log4j12\ivy-1.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.2/slf4j-log4j12-1.7.2.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="4.9.0.201710071750-r"/>
@@ -347,7 +347,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.http.apache">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="144">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="145">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="8356" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.http.apache\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.http.apache/4.9.0.201710071750-r/org.eclipse.jgit.http.apache-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -360,7 +360,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194426" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="143">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194426" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="144">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="8264" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.ui\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/4.9.0.201710071750-r/org.eclipse.jgit.ui-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -372,7 +372,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.archive">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194006" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="138">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007194006" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="8782" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit.archive\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.archive/4.9.0.201710071750-r/org.eclipse.jgit.archive-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -384,7 +384,7 @@
 			</revision>
 		</module>
 		<module organisation="org.osgi" name="org.osgi.core">
-			<revision name="4.3.1" status="release" pubdate="20121030044430" resolver="sbt-chain" artresolver="sbt-chain" homepage="     http://www.osgi.org   " downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="142">
+			<revision name="4.3.1" status="release" pubdate="20121030044430" resolver="sbt-chain" artresolver="sbt-chain" homepage="     http://www.osgi.org   " downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="143">
 				<license name="         Apache License, Version 2.0       " url="         http://opensource.org/licenses/apache2.0.php       "/>
 				<metadata-artifact status="no" details="" size="2635" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.osgi\org.osgi.core\ivy-4.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.archive" conf="compile, runtime" rev="4.3.1" rev-constraint-default="4.3.1" rev-constraint-dynamic="4.3.1" callerrev="4.9.0.201710071750-r"/>
@@ -396,7 +396,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
-			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007193910" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
+			<revision name="4.9.0.201710071750-r" status="release" pubdate="20171007193910" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="140">
 				<license name="Eclipse Distribution License (New BSD License)"/>
 				<metadata-artifact status="no" details="" size="8979" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit\ivy-4.9.0.201710071750-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.9.0.201710071750-r/org.eclipse.jgit-4.9.0.201710071750-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="4.9.0.201710071750-r" rev-constraint-default="4.9.0.201710071750-r" rev-constraint-dynamic="4.9.0.201710071750-r" callerrev="4.9.0.201710071750-r"/>
@@ -413,7 +413,7 @@
 			</revision>
 		</module>
 		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
-			<revision name="1.1.6" status="release" pubdate="20160426214037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/javaewah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="141">
+			<revision name="1.1.6" status="release" pubdate="20160426214037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/javaewah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="142">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4354" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.googlecode.javaewah\JavaEWAH\ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="4.9.0.201710071750-r"/>
@@ -425,7 +425,7 @@
 			</revision>
 		</module>
 		<module organisation="com.jcraft" name="jsch">
-			<revision name="0.1.54" status="release" pubdate="20160903044216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="140">
+			<revision name="0.1.54" status="release" pubdate="20160903044216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="141">
 				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3138" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.jcraft\jsch\ivy-0.1.54.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="0.1.54" rev-constraint-default="0.1.54" rev-constraint-dynamic="0.1.54" callerrev="4.9.0.201710071750-r"/>
@@ -437,7 +437,7 @@
 			</revision>
 		</module>
 		<module organisation="args4j" name="args4j">
-			<revision name="2.33" status="release" pubdate="20160131032511" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
+			<revision name="2.33" status="release" pubdate="20160131032511" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="138">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="3742" time="0" location="C:\Users\Ceiba\.ivy2\cache\args4j\args4j\ivy-2.33.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/args4j/args4j/2.33/args4j-2.33.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="2.33" rev-constraint-default="2.33" rev-constraint-dynamic="2.33" callerrev="4.9.0.201710071750-r"/>
@@ -449,7 +449,7 @@
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="scalasti_2.12">
-			<revision name="2.1.4" status="release" pubdate="20161223212622" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/scalasti/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="127">
+			<revision name="2.1.4" status="release" pubdate="20161223212622" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/scalasti/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="128">
 				<license name="BSD" url="http://software.clapper.org/scalasti/license.html"/>
 				<metadata-artifact status="no" details="" size="3431" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.clapper\scalasti_2.12\ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/scalasti_2.12/2.1.4/scalasti_2.12-2.1.4.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-lib_2.12" conf="default, compile, runtime, master" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="0.11.0"/>
@@ -461,7 +461,7 @@
 			</revision>
 		</module>
 		<module organisation="org.antlr" name="ST4">
-			<revision name="4.0.8" status="release" pubdate="20140325065835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.stringtemplate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="134">
+			<revision name="4.0.8" status="release" pubdate="20140325065835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.stringtemplate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="135">
 				<license name="BSD licence" url="http://antlr.org/license.html"/>
 				<metadata-artifact status="no" details="" size="4914" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.antlr\ST4\ivy-4.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.pom"/>
 				<caller organisation="org.clapper" name="scalasti_2.12" conf="compile, runtime" rev="4.0.8" rev-constraint-default="4.0.8" rev-constraint-dynamic="4.0.8" callerrev="2.1.4"/>
@@ -473,7 +473,7 @@
 			</revision>
 		</module>
 		<module organisation="org.antlr" name="antlr-runtime">
-			<revision name="3.5.2" status="release" pubdate="20140325070356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="135">
+			<revision name="3.5.2" status="release" pubdate="20140325070356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="136">
 				<license name="BSD licence" url="http://antlr.org/license.html"/>
 				<metadata-artifact status="no" details="" size="5642" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.antlr\antlr-runtime\ivy-3.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.pom"/>
 				<caller organisation="org.antlr" name="ST4" conf="compile, runtime" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="4.0.8"/>
@@ -485,7 +485,7 @@
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="classutil_2.12">
-			<revision name="1.1.1" status="release" pubdate="20161223202848" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/classutil/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="129">
+			<revision name="1.1.1" status="release" pubdate="20161223202848" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/classutil/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="130">
 				<license name="BSD New" url="http://software.clapper.org/classutil/license.html"/>
 				<metadata-artifact status="no" details="" size="3415" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.clapper\classutil_2.12\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/classutil_2.12/1.1.1/classutil_2.12-1.1.1.pom"/>
 				<caller organisation="org.clapper" name="scalasti_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.1.4"/>
@@ -497,7 +497,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-util">
-			<revision name="5.1" status="release" pubdate="20160305084310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="133">
+			<revision name="5.1" status="release" pubdate="20160305084310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="134">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
 				<metadata-artifact status="no" details="" size="4160" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.ow2.asm\asm-util\ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.1/asm-util-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.12" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.1"/>
@@ -518,7 +518,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-commons">
-			<revision name="5.1" status="release" pubdate="20160305084258" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="131">
+			<revision name="5.1" status="release" pubdate="20160305084258" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="132">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
 				<metadata-artifact status="no" details="" size="4166" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.ow2.asm\asm-commons\ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.12" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.1"/>
@@ -539,7 +539,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-tree">
-			<revision name="5.1" status="release" pubdate="20160305084305" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="132">
+			<revision name="5.1" status="release" pubdate="20160305084305" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="133">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
 				<metadata-artifact status="no" details="" size="4155" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.ow2.asm\asm-tree\ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.pom"/>
 				<caller organisation="org.ow2.asm" name="asm-analysis" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="5.0.3"/>
@@ -567,7 +567,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm">
-			<revision name="5.1" status="release" pubdate="20160305084246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="130">
+			<revision name="5.1" status="release" pubdate="20160305084246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="131">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
 				<metadata-artifact status="no" details="" size="3978" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.ow2.asm\asm\ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.1/asm-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.12" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.1"/>
@@ -591,7 +591,7 @@
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="grizzled-scala_2.12">
-			<revision name="4.2.0" status="release" pubdate="20161223192217" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-scala/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="128">
+			<revision name="4.2.0" status="release" pubdate="20161223192217" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-scala/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="129">
 				<license name="BSD" url="http://software.clapper.org/grizzled-scala/license.html"/>
 				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.clapper\grizzled-scala_2.12\ivy-4.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-scala_2.12/4.2.0/grizzled-scala_2.12-4.2.0.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.12" conf="compile, runtime" rev="4.2.0" rev-constraint-default="4.2.0" rev-constraint-dynamic="4.2.0" callerrev="1.1.1"/>
@@ -600,6 +600,39 @@
 					<artifact name="grizzled-scala_2.12" type="jar" ext="jar" status="no" details="" size="368307" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.clapper\grizzled-scala_2.12\jars\grizzled-scala_2.12-4.2.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-scala_2.12/4.2.0/grizzled-scala_2.12-4.2.0.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="se.marcuslonnberg" name="sbt-docker">
+			<revision name="1.5.0" status="release" pubdate="20171002144703" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/marcuslonnberg/sbt-docker" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="124">
+				<license name="MIT License" url="https://github.com/marcuslonnberg/sbt-docker/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3299" time="0" location="C:\Users\Ceiba\.ivy2\cache\scala_2.12\sbt_1.0\se.marcuslonnberg\sbt-docker\ivy-1.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/se/marcuslonnberg/sbt-docker_2.12_1.0/1.5.0/sbt-docker-1.5.0.pom"/>
+				<caller organisation="default" name="prueba-build" conf="compile, runtime" rev="1.5.0" rev-constraint-default="1.5.0" rev-constraint-dynamic="1.5.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-docker" type="jar" ext="jar" status="no" details="" size="188545" time="0" location="C:\Users\Ceiba\.ivy2\cache\scala_2.12\sbt_1.0\se.marcuslonnberg\sbt-docker\jars\sbt-docker-1.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/se/marcuslonnberg/sbt-docker_2.12_1.0/1.5.0/sbt-docker-1.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.5" status="release" pubdate="20161013145341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="125">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12480" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom"/>
+				<caller organisation="org.webjars" name="webjars-locator-core" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.33"/>
+				<caller organisation="se.marcuslonnberg" name="sbt-docker" conf="default, compile, runtime, master" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="1.5.0"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="479881" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.1" status="release" pubdate="20111115022705" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8108" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
+				<evicted-by rev="3.5"/>
+				<caller organisation="org.webjars" name="webjars-locator-core" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.33"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -616,7 +649,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-js-engine">
-			<revision name="1.2.2" status="release" pubdate="20170823171455" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt-js-engine" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="103">
+			<revision name="1.2.2" status="release" pubdate="20170823171455" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt-js-engine" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="102">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2202" time="0" location="C:\Users\Ceiba\.ivy2\cache\scala_2.12\sbt_1.0\com.typesafe.sbt\sbt-js-engine\ivy-1.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-js-engine/scala_2.12/sbt_1.0/1.2.2/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="1.2.2" rev-constraint-default="1.2.2" rev-constraint-dynamic="1.2.2" callerrev="2.6.20" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
@@ -628,7 +661,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="npm_2.12">
-			<revision name="1.2.1" status="release" pubdate="20170814044923" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/npm" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="123">
+			<revision name="1.2.1" status="release" pubdate="20170814044923" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/npm" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="122">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3589" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe\npm_2.12\ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/npm_2.12/1.2.1/npm_2.12-1.2.1.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-js-engine" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.2.2"/>
@@ -640,7 +673,7 @@
 			</revision>
 		</module>
 		<module organisation="org.webjars" name="npm">
-			<revision name="4.2.0" status="release" pubdate="20170220174137" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="124">
+			<revision name="4.2.0" status="release" pubdate="20170220174137" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="123">
 				<license name="Assorted" url="https://github.com/npm/npm/blob/master/LICENCE"/>
 				<metadata-artifact status="no" details="" size="3471" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.webjars\npm\ivy-4.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/npm/4.2.0/npm-4.2.0.pom"/>
 				<caller organisation="com.typesafe" name="npm_2.12" conf="default, compile, runtime, master" rev="4.2.0" rev-constraint-default="4.2.0" rev-constraint-dynamic="4.2.0" callerrev="1.2.1"/>
@@ -652,7 +685,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="jse_2.12">
-			<revision name="1.2.3" status="release" pubdate="20170814041116" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/js-engine" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="104">
+			<revision name="1.2.3" status="release" pubdate="20170814041116" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/js-engine" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="103">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4045" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe\jse_2.12\ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/jse_2.12/1.2.3/jse_2.12-1.2.3.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-js-engine" conf="compile" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.2.2"/>
@@ -665,7 +698,7 @@
 			</revision>
 		</module>
 		<module organisation="io.spray" name="spray-json_2.12">
-			<revision name="1.3.3" status="release" pubdate="20161229050833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="122">
+			<revision name="1.3.3" status="release" pubdate="20161229050833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="121">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3117" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.spray\spray-json_2.12\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.3/spray-json_2.12-1.3.3.pom"/>
 				<caller organisation="com.typesafe" name="jse_2.12" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.2.3"/>
@@ -677,7 +710,7 @@
 			</revision>
 		</module>
 		<module organisation="io.apigee.trireme" name="trireme-node10src">
-			<revision name="0.8.9" status="release" pubdate="20160201201623" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="121">
+			<revision name="0.8.9" status="release" pubdate="20160201201623" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="120">
 				<license name="MIT License" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="7094" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.apigee.trireme\trireme-node10src\ivy-0.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.8.9/trireme-node10src-0.8.9.pom"/>
 				<caller organisation="com.typesafe" name="jse_2.12" conf="default, compile, runtime, master" rev="0.8.9" rev-constraint-default="0.8.9" rev-constraint-dynamic="0.8.9" callerrev="1.2.3"/>
@@ -689,7 +722,7 @@
 			</revision>
 		</module>
 		<module organisation="io.apigee.trireme" name="trireme-core">
-			<revision name="0.8.9" status="release" pubdate="20160201201549" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="118">
+			<revision name="0.8.9" status="release" pubdate="20160201201549" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="117">
 				<license name="MIT License" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="6085" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.apigee.trireme\trireme-core\ivy-0.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.8.9/trireme-core-0.8.9.pom"/>
 				<caller organisation="com.typesafe" name="jse_2.12" conf="default, compile, runtime, master" rev="0.8.9" rev-constraint-default="0.8.9" rev-constraint-dynamic="0.8.9" callerrev="1.2.3"/>
@@ -702,7 +735,7 @@
 			</revision>
 		</module>
 		<module organisation="org.mozilla" name="rhino">
-			<revision name="1.7.7.1" status="release" pubdate="20160201132503" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://developer.mozilla.org/en/Rhino" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="120">
+			<revision name="1.7.7.1" status="release" pubdate="20160201132503" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://developer.mozilla.org/en/Rhino" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="119">
 				<license name="Mozilla Public License, Version 2.0" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
 				<metadata-artifact status="no" details="" size="3064" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.mozilla\rhino\ivy-1.7.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.pom"/>
 				<caller organisation="io.apigee.trireme" name="trireme-core" conf="compile, runtime" rev="1.7.7.1" rev-constraint-default="1.7.7.1" rev-constraint-dynamic="1.7.7.1" callerrev="0.8.9"/>
@@ -715,7 +748,7 @@
 			</revision>
 		</module>
 		<module organisation="io.apigee.trireme" name="trireme-kernel">
-			<revision name="0.8.9" status="release" pubdate="20160201201536" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="119">
+			<revision name="0.8.9" status="release" pubdate="20160201201536" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="118">
 				<license name="MIT License" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="5800" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.apigee.trireme\trireme-kernel\ivy-0.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.8.9/trireme-kernel-0.8.9.pom"/>
 				<caller organisation="io.apigee.trireme" name="trireme-core" conf="compile, runtime" rev="0.8.9" rev-constraint-default="0.8.9" rev-constraint-dynamic="0.8.9" callerrev="0.8.9"/>
@@ -728,7 +761,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-contrib_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
+			<revision name="2.5.4" status="release" pubdate="20170810082724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="4208" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-contrib_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-contrib_2.12/2.5.4/akka-contrib_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe" name="jse_2.12" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.2.3"/>
@@ -740,7 +773,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-persistence_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="117">
+			<revision name="2.5.4" status="release" pubdate="20170810082215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="116">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="4050" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-persistence_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.12/2.5.4/akka-persistence_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-contrib_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -752,7 +785,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-cluster-tools_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="116">
+			<revision name="2.5.4" status="release" pubdate="20170810082702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="115">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3096" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-cluster-tools_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-tools_2.12/2.5.4/akka-cluster-tools_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-contrib_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -764,7 +797,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-cluster_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082614" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="115">
+			<revision name="2.5.4" status="release" pubdate="20170810082614" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3344" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-cluster_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-cluster_2.12/2.5.4/akka-cluster_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-contrib_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -777,7 +810,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-remote_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
+			<revision name="2.5.4" status="release" pubdate="20170810082336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="4321" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-remote_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.12/2.5.4/akka-remote_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -790,7 +823,7 @@
 			</revision>
 		</module>
 		<module organisation="io.aeron" name="aeron-driver">
-			<revision name="1.2.5" status="release" pubdate="20170412153450" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
+			<revision name="1.2.5" status="release" pubdate="20170412153450" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3103" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.aeron\aeron-driver\ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/aeron/aeron-driver/1.2.5/aeron-driver-1.2.5.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.12" conf="compile, runtime" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="2.5.4"/>
@@ -802,7 +835,7 @@
 			</revision>
 		</module>
 		<module organisation="io.aeron" name="aeron-client">
-			<revision name="1.2.5" status="release" pubdate="20170412153437" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="113">
+			<revision name="1.2.5" status="release" pubdate="20170412153437" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3099" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.aeron\aeron-client\ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/aeron/aeron-client/1.2.5/aeron-client-1.2.5.pom"/>
 				<caller organisation="io.aeron" name="aeron-driver" conf="compile, runtime" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="1.2.5"/>
@@ -815,7 +848,7 @@
 			</revision>
 		</module>
 		<module organisation="org.agrona" name="agrona">
-			<revision name="0.9.5" status="release" pubdate="20170412151342" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Agrona" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
+			<revision name="0.9.5" status="release" pubdate="20170412151342" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Agrona" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="113">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2928" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.agrona\agrona\ivy-0.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/agrona/agrona/0.9.5/agrona-0.9.5.pom"/>
 				<caller organisation="io.aeron" name="aeron-client" conf="compile, runtime" rev="0.9.5" rev-constraint-default="0.9.5" rev-constraint-dynamic="0.9.5" callerrev="1.2.5"/>
@@ -827,7 +860,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty">
-			<revision name="3.10.6.Final" status="release" pubdate="20160629074528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
+			<revision name="3.10.6.Final" status="release" pubdate="20160629074528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="7263" time="0" location="C:\Users\Ceiba\.ivy2\cache\io.netty\netty\ivy-3.10.6.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.12" conf="compile, runtime" rev="3.10.6.Final" rev-constraint-default="3.10.6.Final" rev-constraint-dynamic="3.10.6.Final" callerrev="2.5.4"/>
@@ -839,7 +872,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-protobuf_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810081831" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
+			<revision name="2.5.4" status="release" pubdate="20170810081831" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2697" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-protobuf_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.4/akka-protobuf_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-persistence_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -852,7 +885,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-stream_2.12">
-			<revision name="2.5.4" status="release" pubdate="20170810082044" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
+			<revision name="2.5.4" status="release" pubdate="20170810082044" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3397" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.4/akka-stream_2.12-2.5.4.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.12" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
@@ -864,7 +897,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="ssl-config-core_2.12">
-			<revision name="0.2.1" status="release" pubdate="20161102083833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
+			<revision name="0.2.1" status="release" pubdate="20161102083833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3653" time="0" location="C:\Users\Ceiba\.ivy2\cache\com.typesafe\ssl-config-core_2.12\ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.1/ssl-config-core_2.12-0.2.1.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="2.5.4"/>
@@ -884,7 +917,7 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="1.1.0" status="release" pubdate="20180201161040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="165">
+			<revision name="1.1.0" status="release" pubdate="20180201161040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="166">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0.pom"/>
 				<caller organisation="com.typesafe" name="ssl-config-core_2.12" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.2.1"/>
@@ -937,7 +970,7 @@
 			</revision>
 		</module>
 		<module organisation="org.reactivestreams" name="reactive-streams">
-			<revision name="1.0.1" status="release" pubdate="20170809052439" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
+			<revision name="1.0.1" status="release" pubdate="20170809052439" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
 				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
 				<metadata-artifact status="no" details="" size="2553" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.reactivestreams\reactive-streams\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.5.4"/>
@@ -983,18 +1016,6 @@
 				<evicted-by rev="0.33"/>
 				<caller organisation="com.typesafe" name="npm_2.12" conf="default, compile, runtime, master" rev="0.32" rev-constraint-default="0.32" rev-constraint-dynamic="0.32" callerrev="1.2.1"/>
 				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.commons" name="commons-lang3">
-			<revision name="3.1" status="release" pubdate="20111115022705" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="8108" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
-				<caller organisation="org.webjars" name="webjars-locator-core" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.33"/>
-				<artifacts>
-					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="315805" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
-					</artifact>
 				</artifacts>
 			</revision>
 		</module>
@@ -1326,7 +1347,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-container-default">
-			<revision name="1.0-alpha-9-stable-1" status="release" pubdate="20070310204924" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="161">
+			<revision name="1.0-alpha-9-stable-1" status="release" pubdate="20070310204924" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="162">
 				<metadata-artifact status="no" details="" size="3177" time="0" location="C:\Users\Ceiba\.ivy2\cache\org.codehaus.plexus\plexus-container-default\ivy-1.0-alpha-9-stable-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.0-alpha-9-stable-1" rev-constraint-default="1.0-alpha-9-stable-1" rev-constraint-dynamic="1.0-alpha-9-stable-1" callerrev="2.7.1"/>
 				<artifacts>
@@ -1433,7 +1454,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.servlet" name="javax.servlet-api">
-			<revision name="3.1.0" status="release" pubdate="20130425185239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="152">
+			<revision name="3.1.0" status="release" pubdate="20130425185239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="153">
 				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
 				<metadata-artifact status="no" details="" size="4319" time="0" location="C:\Users\Ceiba\.ivy2\cache\javax.servlet\javax.servlet-api\ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
 				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="9.4.5.v20170502"/>
@@ -1445,7 +1466,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.mail" name="mail">
-			<revision name="1.4" status="release" pubdate="20060502185606" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://glassfish.dev.java.net/javaee5/mail/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="147">
+			<revision name="1.4" status="release" pubdate="20060502185606" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://glassfish.dev.java.net/javaee5/mail/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="148">
 				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
 				<metadata-artifact status="no" details="" size="2834" time="0" location="C:\Users\Ceiba\.ivy2\cache\javax.mail\mail\ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/mail/mail/1.4/mail-1.4.pom"/>
 				<caller organisation="log4j" name="log4j" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.2.15"/>
@@ -1457,7 +1478,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.activation" name="activation">
-			<revision name="1.1" status="release" pubdate="20060502184829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="148">
+			<revision name="1.1" status="release" pubdate="20060502184829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="149">
 				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
 				<metadata-artifact status="no" details="" size="2874" time="0" location="C:\Users\Ceiba\.ivy2\cache\javax.activation\activation\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.pom"/>
 				<caller organisation="javax.mail" name="mail" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.4"/>
@@ -2400,7 +2421,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20190109161454" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20190110091838" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="prueba-build" conf="compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>

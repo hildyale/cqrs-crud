@@ -1,7 +1,7 @@
 package domain.services;
 
 import domain.model.Vehiculo;
-import infrastructure.repository.VehiculoRepository;
+import domain.repository.VehiculoRepository;
 
 import javax.inject.Inject;
 import java.util.concurrent.CompletionStage;

@@ -1,11 +1,9 @@
 package application.controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import domain.events.DomainEventPublisher;
 import domain.services.VehiculosCommandService;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.*;
-import infrastructure.repository.VehiculoRepository;
 import domain.model.Vehiculo;
 import static play.libs.Json.toJson;
 import static play.libs.Json.fromJson;

@@ -5,10 +5,9 @@ import domain.events.VehiculoCreated;
 import domain.events.VehiculoDeleted;
 import domain.events.VehiculoUpdated;
 import domain.model.Vehiculo;
-import infrastructure.repository.VehiculoRepository;
+import domain.repository.VehiculoRepository;
 
 import javax.inject.Inject;
-import javax.transaction.Transactional;
 import java.util.concurrent.CompletionStage;
 
 public class VehiculosCommandService {

@@ -161,10 +161,10 @@
 <xsl:template name="icons">
     <xsl:param name="revision"/>
     <xsl:if test="$revision/@searched = 'true'">
-         <img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in infrastructure.repository"/>
+         <img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in infrastructure.repository.repositoryjpa"/>
     </xsl:if>
     <xsl:if test="$revision/@downloaded = 'true'">
-         <img src="http://ant.apache.org/ivy/images/downloaded.gif" alt="downloaded" title="downloaded from infrastructure.repository"/>
+         <img src="http://ant.apache.org/ivy/images/downloaded.gif" alt="downloaded" title="downloaded from infrastructure.repository.repositoryjpa"/>
     </xsl:if>
     <xsl:if test="$revision/@evicted">
         <xsl:element name="img">

@@ -1,65 +1,376 @@
-2019-01-10 07:33:22,519 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-6 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:33:22,533 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2019-01-10 07:33:22,851 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-6 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:33:24,412 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:14:59,022 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:14:59,031 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2019-01-14 08:14:59,289 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-3 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:14:59,721 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:33:24,459 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev)
-2019-01-10 07:47:52,918 [INFO] from application in application-akka.actor.default-dispatcher-55 - Shutting down connection pool.
-2019-01-10 07:47:53,215 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-17 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:47:53,215 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-17 - Creating Pool for datasource 'default'
-2019-01-10 07:47:53,227 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-17 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:47:53,546 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:14:59,760 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2019-01-14 08:15:00,044 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @7ah9c95f7 - Internal server error, for (GET) [/vehiculos] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: org.jdbi.v3.core.mapper.NoSuchMapperException: No mapper registered for type class infrastructure.repository.VehiculoJpa]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:382)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:380)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:413)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.CompletionException: org.jdbi.v3.core.mapper.NoSuchMapperException: No mapper registered for type class infrastructure.repository.VehiculoJpa
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1592)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.jdbi.v3.core.mapper.NoSuchMapperException: No mapper registered for type class infrastructure.repository.VehiculoJpa
+	at org.jdbi.v3.core.result.ResultBearing.lambda$null$0(ResultBearing.java:115)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.jdbi.v3.core.result.ResultBearing.lambda$mapTo$1(ResultBearing.java:115)
+	at org.jdbi.v3.core.result.ResultBearing$1.scanResultSet(ResultBearing.java:54)
+	at org.jdbi.v3.core.statement.Query.scanResultSet(Query.java:56)
+	at org.jdbi.v3.core.result.ResultBearing.mapTo(ResultBearing.java:113)
+	at org.jdbi.v3.core.result.ResultBearing.mapTo(ResultBearing.java:83)
+	at infrastructure.repository.repositoryjdbi.VehiculoRepositoryJDBI.lambda$null$0(VehiculoRepositoryJDBI.java:29)
+	at org.jdbi.v3.core.Jdbi.withHandle(Jdbi.java:318)
+	at infrastructure.repository.repositoryjdbi.VehiculoRepositoryJDBI.lambda$list$1(VehiculoRepositoryJDBI.java:27)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	... 4 common frames omitted
+2019-01-14 08:19:18,858 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-01-14 08:19:19,057 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-8 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:19:19,057 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2019-01-14 08:19:19,065 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-8 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:19:19,160 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:47:53,557 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev)
-2019-01-10 07:50:23,242 [INFO] from application in application-akka.actor.default-dispatcher-17 - Shutting down connection pool.
-2019-01-10 07:50:23,403 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:50:23,403 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
-2019-01-10 07:50:23,410 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-16 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:50:23,595 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:19:19,169 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev)
+2019-01-14 08:19:19,263 [ERROR] from application in application-akka.actor.default-dispatcher-4 - 
+
+! @7ah9cnp19 - Internal server error, for (GET) [/vehiculos] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:382)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:380)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:413)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.CompletionException: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:604)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	... 6 common frames omitted
+Caused by: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]
+	at org.jdbi.v3.core.result.ResultSetResultIterator.safeNext(ResultSetResultIterator.java:108)
+	at org.jdbi.v3.core.result.ResultSetResultIterator.hasNext(ResultSetResultIterator.java:60)
+	at java.util.Iterator.forEachRemaining(Iterator.java:115)
+	at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at application.controllers.VehiculosQueryController.lambda$getVehiculos$0(VehiculosQueryController.java:30)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	... 9 common frames omitted
+Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:743)
+	at com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6303)
+	at org.jdbi.v3.core.result.ResultSetResultIterator.safeNext(ResultSetResultIterator.java:106)
+	... 20 common frames omitted
+2019-01-14 08:23:56,556 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2019-01-14 08:23:56,746 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-12 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:23:56,746 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-12 - Creating Pool for datasource 'default'
+2019-01-14 08:23:56,752 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-12 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:23:58,030 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:50:23,602 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)
-2019-01-10 07:51:16,939 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2019-01-10 07:51:17,065 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:51:17,065 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
-2019-01-10 07:51:17,071 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-16 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:51:17,244 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:23:58,036 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev)
+2019-01-14 08:23:58,188 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
+
+! @7ah9ddlh6 - Internal server error, for (GET) [/vehiculos] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Vehiculo is not mapped [select p from Vehiculo p]]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:382)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:380)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:413)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Vehiculo is not mapped [select p from Vehiculo p]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1592)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Vehiculo is not mapped [select p from Vehiculo p]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at infrastructure.repository.repositoryjpa.VehiculoRepositoryImpl.list(VehiculoRepositoryImpl.java:91)
+	at infrastructure.repository.repositoryjpa.VehiculoRepositoryImpl.lambda$null$6(VehiculoRepositoryImpl.java:45)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:142)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:100)
+	at infrastructure.repository.repositoryjpa.VehiculoRepositoryImpl.wrap(VehiculoRepositoryImpl.java:52)
+	at infrastructure.repository.repositoryjpa.VehiculoRepositoryImpl.lambda$list$7(VehiculoRepositoryImpl.java:45)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	... 4 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Vehiculo is not mapped [select p from Vehiculo p]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:217)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	... 13 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Vehiculo is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:326)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3706)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3595)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	... 19 common frames omitted
+2019-01-14 08:25:44,393 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2019-01-14 08:25:44,561 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:25:44,561 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
+2019-01-14 08:25:44,570 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-16 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:25:44,757 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:51:17,250 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)
-2019-01-10 07:52:10,409 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
-2019-01-10 07:52:10,545 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-17 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:52:10,545 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-17 - Creating Pool for datasource 'default'
-2019-01-10 07:52:10,551 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-17 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:52:10,724 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:25:44,766 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)
+2019-01-14 08:26:10,389 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-01-14 08:26:10,509 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:26:10,510 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
+2019-01-14 08:26:10,515 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-16 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:26:10,602 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:52:10,729 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev)
-2019-01-10 07:55:03,585 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-01-10 07:55:03,762 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-19 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
-2019-01-10 07:55:03,762 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-19 - Creating Pool for datasource 'default'
-2019-01-10 07:55:03,768 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-19 - datasource [default] bound to JNDI as DefaultDS
-2019-01-10 07:55:03,990 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-19 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-14 08:26:10,608 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)
+2019-01-14 08:26:10,630 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
+
+! @7ah9dl9f4 - Internal server error, for (GET) [/vehiculos] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:382)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:380)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:413)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.concurrent.CompletionException: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:604)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	... 6 common frames omitted
+Caused by: org.jdbi.v3.core.result.ResultSetException: Unable to advance result set [statement:"select * from Vehiculo", rewritten:"select * from Vehiculo", parsed:"ParsedSql{sql='select * from Vehiculo', parameters=ParsedParameters{positional=false, parameterNames=[]}}", arguments:{positional:{}, named:{}, finder:[]}]
+	at org.jdbi.v3.core.result.ResultSetResultIterator.safeNext(ResultSetResultIterator.java:108)
+	at org.jdbi.v3.core.result.ResultSetResultIterator.hasNext(ResultSetResultIterator.java:60)
+	at java.util.Iterator.forEachRemaining(Iterator.java:115)
+	at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at application.controllers.VehiculosQueryController.lambda$getVehiculos$0(VehiculosQueryController.java:30)
+	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:602)
+	... 9 common frames omitted
+Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:743)
+	at com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6303)
+	at org.jdbi.v3.core.result.ResultSetResultIterator.safeNext(ResultSetResultIterator.java:106)
+	... 20 common frames omitted
+2019-01-14 08:35:59,216 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-01-14 08:35:59,333 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-18 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:35:59,333 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-18 - Creating Pool for datasource 'default'
+2019-01-14 08:35:59,338 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-18 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:35:59,414 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-18 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-01-10 07:55:03,996 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-19 - Application started (Dev)
+2019-01-14 08:35:59,419 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-18 - Application started (Dev)
+2019-01-14 08:37:12,991 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-01-14 08:37:13,116 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-13 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:37:13,116 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
+2019-01-14 08:37:13,123 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-13 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:37:13,211 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:37:13,216 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev)
+2019-01-14 08:37:45,138 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2019-01-14 08:37:45,250 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-13 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:37:45,250 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
+2019-01-14 08:37:45,257 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-13 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:37:45,343 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:37:45,346 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev)
+2019-01-14 08:40:28,675 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2019-01-14 08:40:28,779 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-13 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:40:28,779 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
+2019-01-14 08:40:28,785 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-13 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:40:28,856 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:40:28,858 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev)
+2019-01-14 08:45:42,957 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2019-01-14 08:45:43,053 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-28 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:45:43,053 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-28 - Creating Pool for datasource 'default'
+2019-01-14 08:45:43,058 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-28 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:45:43,131 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-28 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:45:43,133 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-28 - Application started (Dev)
+2019-01-14 08:49:18,940 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-01-14 08:49:19,049 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-30 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:49:19,049 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-30 - Creating Pool for datasource 'default'
+2019-01-14 08:49:19,055 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-30 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:49:19,120 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-30 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:49:19,122 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-30 - Application started (Dev)
+2019-01-14 08:51:29,915 [INFO] from application in application-akka.actor.default-dispatcher-15 - Shutting down connection pool.
+2019-01-14 08:51:30,016 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-32 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:51:30,016 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-32 - Creating Pool for datasource 'default'
+2019-01-14 08:51:30,023 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-32 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:51:30,090 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-32 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:51:30,093 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-32 - Application started (Dev)
+2019-01-14 08:51:51,360 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-01-14 08:51:51,479 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-24 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:51:51,479 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-24 - Creating Pool for datasource 'default'
+2019-01-14 08:51:51,486 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-24 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:51:51,559 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-24 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:51:51,562 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-24 - Application started (Dev)
+2019-01-14 08:52:24,088 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2019-01-14 08:52:24,189 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-32 - Database [default] initialized at jdbc:mysql://localhost:3306/prueba?serverTimezone=UTC
+2019-01-14 08:52:24,189 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-32 - Creating Pool for datasource 'default'
+2019-01-14 08:52:24,193 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-32 - datasource [default] bound to JNDI as DefaultDS
+2019-01-14 08:52:24,259 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-32 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-01-14 08:52:24,260 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-32 - Application started (Dev)
