@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, docs"
-		date="20190111144401"/>
+		date="20190114131935"/>
 	<dependencies>
 		<module organisation="org.jdbi" name="jdbi3-core">
 			<revision name="3.5.1" status="release" pubdate="20181008230435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbi.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="82">

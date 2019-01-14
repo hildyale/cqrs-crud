@@ -4,7 +4,7 @@
 		module="prueba$sources"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190111150455"
+		publication="20190114131959"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
